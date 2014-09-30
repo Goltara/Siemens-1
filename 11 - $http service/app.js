@@ -1,17 +1,13 @@
 angular
     .module('app', [])
-    .controller('MyCtrl', MyCtrl)
-    .service('formatterService', formatterService);
+    .controller('MyCtrl', MyCtrl);
 
-function formatterService() {}
-
-formatterService.prototype.toUpperCase = function(input) {
-    return input.toUpperCase();
-};
-
-MyCtrl.$inject = ['formatterService'];
-function MyCtrl(fs) {
-
-    this.name = fs.toUpperCase('Lisa Bart and Maggie');
+MyCtrl.$inject = ['$http'];
+function MyCtrl($http) {
+    var vm = this;
+    vm.name = '';
+    $http.get('http://localhost:8080/todo').success(function(data) {
+        debugger;
+    });
 
 }
