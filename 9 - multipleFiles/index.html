@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body ng-app="app">
+    <div ng-controller="MyCtrl as myCtrl">
+        {{ myCtrl.name }}
+    </div>
+    <div ng-controller="My2ndCtrl as my2ndCtrl">
+        {{ my2ndCtrl.name }}
+    </div>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="formatter.service.js"></script>
+    <script src="myCtrl.controller.js"></script>
+    <script src="my2ndCtrl.controller.js"></script>
+</body>
+</html>

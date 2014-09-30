@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body ng-app="app">
+    <div ng-controller="ParentCtrl as parentCtrl" ng-controller="MyCtrl as myCtrl">
+        {{ parentCtrl.name }}
+        <div ng-controller="MyCtrl as myCtrl">
+            {{ parentCtrl.name }} {{ myCtrl.name }} and {{ myCtrl.mary }}
+
+            <button ng-click="myCtrl.doSomething()">Hello</button>
+        </div>
+    </div>
+
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

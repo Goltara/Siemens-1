@@ -3,9 +3,11 @@
 
     angular
         .module('app.controller', [])
-        .controller('My®Ctrl', MyCtrl);
+        .controller('MyCtrl', MyCtrl);
 
-    MyCtrl.$inject = ['$scope'];
+    MyCtrl.$inject = ['$scope']
+
+
     function MyCtrl($scope) {
         $scope.name = 'Peter';
 
