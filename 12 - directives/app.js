@@ -15,6 +15,10 @@ function myDirective() {
         },
         controller: MyDirectiveController,
         link: function(scope, el, attr) {
+            // initialize
+            scope.myName = scope.name;
+
+
             //scope.foo = 'in the child scope';
             console.log(scope.foo);
 
@@ -38,7 +42,7 @@ function MyCtrl($scope) {
     $scope.color = 'green';
     $scope.name = 'Lisa';
 
-    $scope.reverseName = function() {
+    $scope.reverseName = function(val) {
         console.log('reverseName');
     }
 

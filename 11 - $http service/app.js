@@ -6,8 +6,19 @@ MyCtrl.$inject = ['$http'];
 function MyCtrl($http) {
     var vm = this;
     vm.name = '';
-    $http.get('http://localhost:8080/todo').success(function(data) {
+    var promise = $http.get('http://localhost:8080/todo');
+
+    promise.success(function(data) {
         debugger;
     });
+
+    promise.success(function() {
+
+    })
+
+    $http({
+        url: '/user',
+        method: ''
+    })
 
 }

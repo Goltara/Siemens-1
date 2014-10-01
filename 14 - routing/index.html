@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body ng-app="app">
+
+    <div ui-view="nav"></div>
+    <div ui-view="content"></div>
+
+    <button ui-sref="Peter">Route A</button>
+    <button ui-sref="b">Route 66</button>
+
+    <div ng-controller="MyCtrl as myCtrl">
+        {{ myCtrl.name }}
+        <button ng-click="myCtrl.change()">Change</button>
+    </div>
+
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
