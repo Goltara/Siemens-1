@@ -1,3 +1,3 @@
-/**
- * Created by sspringer on 01/10/14.
- */
+define(['angular', 'controller'], function(angular, controller) {
+    return angular.module('app', ['controller']);
+});

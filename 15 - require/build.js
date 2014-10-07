@@ -1,3 +1,5 @@
-/**
- * Created by sspringer on 01/10/14.
- */
+({
+    name: 'main',
+    mainConfigFile: 'main.js',
+    out: 'main.min.js'
+})

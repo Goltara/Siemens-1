@@ -1,3 +1,13 @@
-/**
- * Created by sspringer on 01/10/14.
- */
+require.config({
+    'paths': {
+        'angular': './angular',
+        'domReady': './domReady'
+    },
+    shim: {
+        'angular': {
+            exports: 'angular'
+        }
+    },
+    deps: ['./bootstrap']
+    //deps: ['app']
+});
