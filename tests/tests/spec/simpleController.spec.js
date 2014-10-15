@@ -4,13 +4,22 @@ describe('simple controller', function() {
     var $scope;
     var createController;
 
-    beforeEach(inject(function($injector) {
+    /*beforeEach(inject(function($injector) {
         $rootScope = $injector.get('$rootScope');
 
         $scope = $rootScope.$new();
 
         var $controller = $injector.get('$controller');
 
+        createController = function() {
+            return $controller('PasswordCtrl', {
+                '$scope': $scope
+            });
+        };
+    }));*/
+
+    beforeEach(inject(function($rootScope, $controller) {
+        $scope = $rootScope.$new();
         createController = function() {
             return $controller('PasswordCtrl', {
                 '$scope': $scope

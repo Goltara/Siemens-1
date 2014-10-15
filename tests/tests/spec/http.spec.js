@@ -40,12 +40,12 @@ describe('http controller', function() {
         $httpBackend.flush();
 
         var expected = [{
-                id: 1,
-                name: 'Projekt A'
-            }, {
-                id: 2,
-                name: 'Projekt B'
-            }];
+            id: 1,
+            name: 'Projekt A'
+        }, {
+            id: 2,
+            name: 'Projekt B'
+        }];
 
 
         expect($scope.data).toEqual(expected);

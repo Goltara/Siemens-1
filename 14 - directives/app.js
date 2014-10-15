@@ -32,7 +32,7 @@ MyDirectiveController.$inject = ['$scope'];
 function MyDirectiveController($scope) {
     $scope.foo = 'lala';
     $scope.name = 'Klaus';
-
+debugger;
     $scope.reverse();
 
 }

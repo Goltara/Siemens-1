@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body ng-app="myApp">
+
+    <div ng-controller="MyCtrl as myCtrl">
+        {{ 'HELLO' | translate: {username: myCtrl.name} }}
+
+        {{ 'SOMETHING' | translate }}
+        {{ 'DOG' | translate }}
+
+        <br />
+
+        <button ng-click="myCtrl.translate('de')">DE</button>
+        <button ng-click="myCtrl.translate('en')">EN</button>
+    </div>
+
+    <script src="../files/angular.js"></script>
+    <script src="../files/angular-translate.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

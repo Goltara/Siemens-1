@@ -13,12 +13,10 @@ function config($stateProvider, $urlRouterProvider) {
         .state('Peter', {
             url: '/Paul',
             template: '<div>Route A</div>'
-            //controller: 'ACtrl'
         })
         .state('b', {
             url: '/b',
             template: '<div>Route B</div>'
-            //controller: 'BCtrl'
         });
 }
 
